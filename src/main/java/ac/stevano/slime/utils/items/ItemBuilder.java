@@ -1,5 +1,6 @@
 package ac.stevano.slime.utils.items;
 
+import ac.stevano.slime.Slime;
 import ac.stevano.slime.utils.CC;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -116,9 +117,9 @@ public class ItemBuilder {
         if (this.durability != null)
             itemStack.setDurability(this.durability);
         if (this.title != null)
-            meta.setDisplayName(CC.translate("&r" + this.title));
+            meta.setDisplayName(Slime.getCC().translate("&r" + this.title));
         if (this.lores != null && this.lores.size() > 0)
-            meta.setLore(CC.translate(this.lores));
+            meta.setLore(Slime.getCC().translate(this.lores));
         itemStack.setItemMeta(meta);
         return itemStack;
     }

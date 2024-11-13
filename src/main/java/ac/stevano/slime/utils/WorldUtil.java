@@ -1,5 +1,6 @@
 package ac.stevano.slime.utils;
 
+import org.apache.commons.io.FileUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
