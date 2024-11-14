@@ -117,9 +117,9 @@ public class ItemBuilder {
         if (this.durability != null)
             itemStack.setDurability(this.durability);
         if (this.title != null)
-            meta.setDisplayName(Slime.getCC().translate("&r" + this.title));
+            meta.setDisplayName(new CC().translate("&r" + this.title));
         if (this.lores != null && this.lores.size() > 0)
-            meta.setLore(Slime.getCC().translate(this.lores));
+            meta.setLore(new CC().translate(this.lores));
         itemStack.setItemMeta(meta);
         return itemStack;
     }
