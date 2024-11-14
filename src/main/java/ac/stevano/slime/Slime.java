@@ -3,6 +3,7 @@ package ac.stevano.slime;
 import ac.stevano.slime.utils.items.InventoryUtil;
 import ac.stevano.slime.utils.items.ItemBuilder;
 import ac.stevano.slime.utils.*;
+import ac.stevano.slime.utils.items.ItemUtil;
 
 public class Slime {
     private ItemBuilder itemBuilder;
@@ -16,6 +17,7 @@ public class Slime {
     private ServerSlotsUtil serverSlotsUtil;
     private WorldUtil worldUtil;
     private FileUtil fileUtil;
+    private ItemUtil itemUtil;
 
     public Slime() {
         itemBuilder = new ItemBuilder();
@@ -29,6 +31,7 @@ public class Slime {
         serverSlotsUtil = new ServerSlotsUtil();
         worldUtil = new WorldUtil();
         fileUtil = new FileUtil();
+        itemUtil = new ItemUtil();
     }
 
     public ItemBuilder getItemBuilder() {
@@ -73,5 +76,9 @@ public class Slime {
 
     public WorldUtil getWorldUtil() {
         return worldUtil;
+    }
+
+    public ItemUtil getItemUtil() {
+        return itemUtil;
     }
 }
